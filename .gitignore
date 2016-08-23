@@ -1,6 +1,6 @@
 .*.un~
 *.log
-*.js
+app/*.js
 *.map
 
 node_modules
