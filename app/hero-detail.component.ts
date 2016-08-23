@@ -6,8 +6,8 @@ import { HeroService } from './hero.service';
 
 @Component({
     selector: 'my-hero-detail',
-    templateUrl: 'app/hero-detail.component.html',
-    styleUrls: ['app/hero-detail.component.css']
+    templateUrl: './hero-detail.component.html',
+    styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
     hero: Hero;
@@ -29,10 +29,3 @@ export class HeroDetailComponent implements OnInit {
         window.history.back();
     }
 }
-
-
-/*
- Copyright 2016 Google Inc. All Rights Reserved.
- Use of this source code is governed by an MIT-style license that
- can be found in the LICENSE file at http://angular.io/license
- */
