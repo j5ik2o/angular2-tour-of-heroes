@@ -1,4 +1,7 @@
 .*.un~
+*.log
+app/*.js
+*.map
 
 node_modules
 typings
