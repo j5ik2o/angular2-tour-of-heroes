@@ -5,9 +5,9 @@ var helpers = require('./config/helpers');
 
 module.exports = {
     debugMode: true,
-    context: path.resolve(__dirname, 'app'),
+    context: helpers.root('app'),
     entry: {
-        index: './index.ts'
+        index: './index.ts',
     },
     devtool: 'cheap-module-source-map',
     output: {
@@ -16,13 +16,8 @@ module.exports = {
         sourceMapFilename: 'bundle.map',
     },
     devServer: {
+        contentBase: helpers.root('dist'),
         port: 3000,
-        contentBase: './',
-        historyApiFallback: true,
-        watchOptions: {
-            aggregateTimeout: 300,
-            poll: 1000
-        }
     },
     node: {
         global: 'window',
